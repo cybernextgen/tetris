@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>TetЯis game</title>
+    <meta name="description" content="Vanilla TS tetris game" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="settings-page">
+      <h1 class="settings-page__header">TetЯis game</h1>
+      <form class="settings-form">
+        <select class="settings-form__game-mode-select"></select>
+        <button class="settings-form__submit-button" type="submit">
+          Start
+        </button>
+      </form>
+      <div class="figures-preview">
+        <canvas class="figures-preview__canvas"></canvas>
+      </div>
+    </div>
+    <div class="game-page">
+      <div class="game-field">
+        <canvas class="game-field__canvas"></canvas>
+      </div>
+      <div class="game-sidebar">
+        <div class="game-sidebar__next-figure">
+          <h1 class="game-sidebar__next-figure__header">Next</h1>
+          <canvas class="game-sidebar__next-figure__canvas"></canvas>
+        </div>
+        <div class="game-sidebar__score">
+          <h1 class="game-sidebar__score__header">Score</h1>
+          <span class="game-sidebar__score__value"></span>
+        </div>
+        <div class="game-sidebar__level">
+          <h1 class="game-sidebar__level__header">Level</h1>
+          <span class="game-sidebar__level__value"></span>
+        </div>
+        <div class="game-sidebar__lines">
+          <h1 class="game-sidebar__lines__header">Lines</h1>
+          <span class="game-sidebar__lines__value"></span>
+        </div>
+      </div>
+    </div>
+    <div class="score-page">
+      <h1 class="score-page__header">
+        Game over (<span class="score-page__header__mode"></span>)
+      </h1>
+      <div class="score-page__result">
+        <h2 class="score-page__result__header">Your result:</h2>
+        <div class="score-page__result__body">
+          Score: <span class="score-page__result__body__score"></span>, level:
+          <span class="score-page__result__body__level"></span>, lines:
+          <span class="score-page__result__body__lines"></span>
+        </div>
+      </div>
+      <div class="score-page__best_result">
+        <h2 class="score-page__best_result__header">Best result:</h2>
+        <div class="score-page__best_result__body">
+          Score: <span class="score-page__best_result__body__score"></span>,
+          level: <span class="score-page__best_result__body__level"></span>,
+          lines: <span class="score-page__best_result__body__lines"></span>
+        </div>
+      </div>
+    </div>
+    <div class="score-page__restart">
+      <button class="score-page__restart__button">Restart</button>
+    </div>
+    <script src="js/tetris_frontend.ts" type="module"></script>
+  </body>
+</html>
