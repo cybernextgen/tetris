@@ -1,6 +1,6 @@
 # Tetris game
 
-Small tetris game implementation. Vanilla TS was used, so game hasn't runtime dependencies. Use arrows keys and have a fun!
+Small tetris game implementation. Vanilla TS was used, so game hasn't runtime dependencies. Use arrow keys and have a fun!
 
 ![Settings page](/img/settings.png)
 
